@@ -49,6 +49,13 @@ To install a custom icon theme:
 2. Rename the file to "custom_icon_theme.rcc."
 3. Place the renamed file into the Sigil preferences directory specific to your operating system.
 
+Download one of the .rcc files from Releases
+Rename it to "custom_icon_theme.rcc"
+Copy that file to your Sigil user preferences Folder:
+On macOS: "~/Library/Application Support/sigil-ebook/sigil/"
+On Windows: "%localappdata%\sigil-ebook\sigil\
+On Linux: "~/.local/share/sigil-ebook/sigil"
+
 For quick access to the Sigil preferences directory, open Sigil, head to the Preferences menu, and use the "Open Preferences Location" button found in the Preferences dialog's lower-left corner.
 
 After installation, launch Sigil, navigate to Preferences > Appearance, select the Icon Themes tab, choose your new theme, and restart Sigil to apply the changes.
@@ -69,3 +76,24 @@ This reworded README maintains the original content's intent while offering a fr
 
 Source: Conversation with Bing, 3/17/2024
 (1) undefined. https://github.com/JedWag/dotfiles.git.
+
+---
+Installing a .rcc icon Theme into Sigil
+Download one of the .rcc files from Releases
+Rename it to "custom_icon_theme.rcc"
+Copy that file to your Sigil user preferences Folder:
+On macOS: "~/Library/Application Support/sigil-ebook/sigil/"
+On Windows: "%localappdata%\sigil-ebook\sigil\
+On Linux: "~/.local/share/sigil-ebook/sigil"
+An easier way to find your Sigil user preferences folder is to launch Sigil and navigate to the Preferences menu item. Once Preferences opens, you will see a button to "Open Preferences Location" in the bottom left corner of the Preferences dialog.
+
+Clicking this button should open a Window showing this folder. Drag and drop the .rcc file here.
+
+Once installed. Fire Up Sigil and go to Preferences->Appearance and select the Icon Themes tab. Make your selection and restart Sigil.
+
+Creating Your Own Icon Theme
+More advanced users who are familiar with svg editing (Inkscape, etc) and have Qt installed (for its resource compiler, rcc) can create a complete set of icons matching the names provided in the src/main/folder here.
+
+You can use the command line to run rcc: rcc -binary -o PATH_TO_OUTPUT_FILE.RCC PATH_TO_QRC_FILE
+
+See the Qt docs on rcc for your version of Qt: https://doc.qt.io/qt-5/rcc.html
