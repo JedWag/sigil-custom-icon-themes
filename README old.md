@@ -31,7 +31,7 @@ To help users find possible custom icon themes, we have
 created some additional derived icon themes that Sigil
 users may decide to install themselves:
 
-- Legacy - pure svg versions of Sigil's icons pre Sigil 0.9.7.
+- Legacy - pure svg versions of Sigil's icons pre Sigil v0.9.7.
      - ![Legacy Icon Theme](./img/legacy.png)
 
 - Material Derivatives, each in one of the following

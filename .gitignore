@@ -37,6 +37,3 @@ coverage.xml
 target/
 
 *.ini
-
-# Compiled resources
-*.rcc
