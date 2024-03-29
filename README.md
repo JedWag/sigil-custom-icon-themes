@@ -1,41 +1,42 @@
 # Sigil Icon Themes
 
-Regrettably, the free and multi-platform ebook editor **[Sigil](https://github.com/Sigil-Ebook/Sigil)** offers a limited selection of just three user interface icon themes. Recognizing the diverse preferences of users, this repository is designed to expand those choices, providing additional icon theme options to enhance the user experience.
+Regrettably, the free and multi-platform ebook editor **[Sigil](https://github.com/Sigil-Ebook/Sigil)** offers only a limited selection of user interface icon themes. Acknowledging the diverse preferences of users, this repository aims to expand those options by curating a collection of icon sets. And for those seeking a unique look, a detailed guide for crafting a custom icon set with a Python script is provided.
 
-This repository features an array of icon themes for **Sigil**, beginning with the three standard sets and expanding to include six color variants from the Material icons. Additionally, it offers a diverse collection of custom icon themes, broadening the spectrum of visual customization.
+## Primary Icon Themes
 
-To enhance user convenience, this repository provides clear guidelines for installing any icon theme, ensuring a smooth setup process. Furthermore, a detailed guide that assists users in crafting and compiling their own personalized icon set is included, making customization accessible for all.
+**Sigil** comes installed with three icon themes:
 
-## Standard Icons
-
-Sigil users have the liberty to select from three main icon themes included with Sigil:
-
-
-- **[Main](https://github.com/Sigil-Ebook/Sigil/tree/master/src/Resource_Files/main)**: The standard icon set introduced in Sigil version 1.0 and onwards.
+- **[Main](https://github.com/Sigil-Ebook/Sigil/tree/master/src/Resource_Files/main)**: The default icon set available in Sigil v1.0 and later.
      - ![Main Icon Theme Light](./img/Main.png)
      - ![Main Icon Theme Dark](./img/Main_dark.png)
-- **[Fluent](https://github.com/microsoft/fluentui-system-icons)**: A collection of icons inspired by Microsoft's Fluent Design System.
+- **[Fluent](https://github.com/microsoft/fluentui-system-icons)**: A collection of icons inspired by Microsoft's Fluent icon set.
      - ![Fluent Icon Theme Light](./img/Fluent.png)
      - ![Fluent Icon Theme Dark](./img/Fluent_dark.png)
-- **[Material](https://github.com/google/material-design-icons)**: A set of icons based on Google's Material Design guidelines.
+- **[Material](https://github.com/google/material-design-icons)**: A set of icons based on Google's Material icon set.
      - ![Material Icon Theme Light](./img/Material.png)
      - ![Material Icon Theme Dark](./img/Material_dark.png)
 
-Beyond the primary themes, Sigil also accommodates the integration of custom icon themes. Users can compile their own themes using Qt's Resource Compiler to produce .rcc files.
+To change the icon theme, access the Preference popup menu by selecting `Preference` from the `Edit` menu on the menu bar. Within the popup's sidebar, ensure `Appearance` is selected, then click on the `Icon Themes` tab.
+
+After selecting the preferred theme, restart Sigil for the changes to take effect.
 
 ## Material Icons Derivatives
 
-For those seeking alternative custom themes, this repository offers several additional icon sets derived from Sigil's original designs:
+ https://github.com/JedWag/
 
-- **Legacy Theme**: SVG-based icons reminiscent of Sigil's style prior to version 0.9.7.
+https://github.com/JedWag/sigil-gui-icons/tree/master/releases
+
+This repository offers the following additional icon sets:
+
+- [Legacy Theme](./releases/): a versions of Sigil's icons pre Sigil v0.9.7.
      - ![Legacy Icon Theme](./img/legacy.png)
-- **Material Derivative Themes**: A spectrum of color-based themes (blue, gray, lilac, orange, pink, red) designed to complement both light and dark user interfaces.
-     - ![Material Red Icon Theme](./img/material-red.png)
-     - ![Material Orange Icon Theme](./img/material-orange.png)
-     - ![Material Pink Icon Theme](./img/material-pink.png)
-     - ![Material Gray Icon Theme](./img/material-gray.png)
-     - ![Material Lilac Icon Theme](./img/material-lilac.png)
-     - ![Material Blue Icon Theme](./img/material-blue.png)
+- **Material Derivative Themes**: a spectrum of icon themes, specifically chosen to be usable under both Light and Dark modes.
+     - *Red* ![Material Red Icon Theme](./img/material-red.png)
+     - *Orange* ![Material Orange Icon Theme](./img/material-orange.png)
+     - *Pink* ![Material Pink Icon Theme](./img/material-pink.png)
+     - *Gray* ![Material Gray Icon Theme](./img/material-gray.png)
+     - *Lilac* ![Material Lilac Icon Theme](./img/material-lilac.png)
+     - *Blue* ![Material Blue Icon Theme](./img/material-blue.png)
 
 To obtain any of these custom themes, visit the repository's Releases section and download the desired .rcc icon theme file.
 
@@ -64,6 +65,8 @@ After installation, launch Sigil, navigate to Preferences > Appearance, select t
 
 Tech-savvy users with a knack for SVG editing and Qt's resource compiler (rcc) can design a unique set of icons. Follow the naming conventions outlined in the src/main/folder and use the rcc command line tool to compile your theme:
 
+Beyond the primary themes, Sigil also accommodates the integration of custom icon themes. Users can compile their own themes using Qt's Resource Compiler to produce .rcc files.
+
 ```bash
 rcc -binary -o YOUR_OUTPUT_FILE.RCC YOUR_QRC_FILE
 ```
@@ -75,7 +78,7 @@ For detailed instructions on using rcc, refer to the Qt documentation for your s
 This reworded README maintains the original content's intent while offering a fresh structure and phrasing. If you need further assistance or modifications, feel free to ask!
 
 Source: Conversation with Bing, 3/17/2024
-(1) undefined. https://github.com/JedWag/dotfiles.git.
+(1) undefined.
 
 ---
 Installing a .rcc icon Theme into Sigil
